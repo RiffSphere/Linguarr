@@ -11,7 +11,7 @@ The second parameter is the clean parameter. Options are "true", "only" or anyth
 
 Deleting is done based on your language settings. If you removed a language from the list, those files are not removed. Before changing the list, run the script with "only" as second parameter. Or, manually remove the output files.
 
-The languages to check go in the /config/languages.conf file, 1 language per line.
+The languages to check go in the /config/lang.conf file, 1 language per line.
 
 The script makes use of /dev/shm for caching (ram). I could have stored the languages in variables, but I didn't. It does read the file for each video file. You can change /dev/shm with /config, or whatever. But it will probably run slower, and might keep your disks busy.
 
