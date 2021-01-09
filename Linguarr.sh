@@ -100,5 +100,5 @@ done < /dev/shm/videofiles
 echo
 echo "* Results can be found in: $OUTPUT *"
 echo
-
+exit 0
 
