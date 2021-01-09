@@ -6,7 +6,7 @@ ENV CLEAN=false
 
 RUN \
         echo "* install packages *" && \
-        apk add --no-cache bash git ffmpeg && \
+        apk add --no-cache bash file git ffmpeg && \
         echo "*clonse project *" && \
         git clone -b master https://github.com/RiffSphere/Linguarr /app
 
