@@ -88,6 +88,7 @@ echo "******************************************"
 echo
 while read -r file; do
 	lang="$(ffprobe -show_entries stream=codec_type:stream_tags=language -of compact -select_streams a "$file")"
+	lang=${lang//stream|codec_type=audio/a}
 	while read -r languages; do
 		found="${OUTPUT}found_${languages}.txt"
 		notfound="${OUTPUT}not_found_${languages}.txt"
