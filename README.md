@@ -3,7 +3,7 @@ Having a lot of video files, but not sure they are the correct language? Check t
 
 This script is created to be used in a docker container! It can run by itself, but you will need to edit it and pass the correct parameters.
 
-The script will search for all video files in the "/media/" directory. Use docker to setup your media library to show up in "/media" inside the container. If not using docker, you can manually edit this location.
+The script will search for all video files in the "/Media/" directory. Use docker to setup your media library to show up in "/Media" inside the container. If not using docker, you can manually edit this location.
 
 The first parameter needs to be a valid path, to save the results. The script will make the folder, and create 2 text files for each language. One file containing a list of files that have the language. Another file listing all files without the language.
 
