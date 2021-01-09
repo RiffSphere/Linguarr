@@ -79,7 +79,7 @@ echo "* Depending on your collection  *"
 echo "* This might take a long time   *"
 echo "*********************************"
 echo
-find /Media/ -type f -exec file -N -i -- {} + | sed -n 's!: video/[^:]*$!!p' > /dev/shm/videofiles
+find /mnt/media/ -type f -exec file -N -i -- {} + | sed -n 's!: video/[^:]*$!!p' > /dev/shm/videofiles
 echo "******************************************"
 echo "* Checking all video files for languages *"
 echo "* This can take a long time!             *"
